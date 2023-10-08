@@ -1,0 +1,8 @@
+{ ... }: 
+{
+  imports = [
+    ./vscode
+    ./firefox
+    ./shell
+  ];
+}
