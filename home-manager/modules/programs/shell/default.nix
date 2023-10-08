@@ -3,6 +3,8 @@
 
   imports = [ ./ssh.nix ]; 
 
+  programs.fish.enable = true;
+
   programs.starship = {
     enable = true;
     enableFishIntegration = true; # unneeded in any way lol
@@ -19,5 +21,4 @@
     enable = true;
     nix-direnv.enable = true;
   };
-  environment.pathsToLink = [ "/share/nix-direnv" ];
 }

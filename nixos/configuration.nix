@@ -52,5 +52,7 @@
     vim wget
   ];
 
+  environment.pathsToLink = [ "/share/nix-direnv" ];
+
   system.stateVersion = "22.11";
 }
