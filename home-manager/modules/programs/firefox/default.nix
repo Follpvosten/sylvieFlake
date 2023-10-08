@@ -1,4 +1,4 @@
-{}:
+{ ... }:
 {
   programs.chromium.enable = true; # what the dog doin
   programs.firefox = {
