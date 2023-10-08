@@ -41,6 +41,11 @@
   time.timeZone = "Europe/Vienna";
   i18n.defaultLocale = "de_AT.UTF-8";
 
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [ "48d6023c46a45822" ];
+  };
+
   environment.systemPackages = with pkgs; [ 
     ripgrep 
     libsForQt5.ark zip rar
