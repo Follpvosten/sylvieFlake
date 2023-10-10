@@ -16,6 +16,7 @@
     
     enableExtensionUpdateCheck = false;
     enableUpdateCheck = false;
+    mutableExtensionsDir = false;
     userSettings = {
       "files.insertFinalNewline" = true;
       "editor.formatOnSave" = true;
