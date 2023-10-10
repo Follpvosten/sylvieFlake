@@ -9,7 +9,8 @@
       usernamehw.errorlens ms-azuretools.vscode-docker 
       matthewpi.caddyfile-support mkhl.direnv
       # 🦀
-      vadimcn.vscode-lldb matklad.rust-analyzer bungcip.better-toml 
+      vadimcn.vscode-lldb matklad.rust-analyzer
+      bungcip.better-toml serayuzgur.crates
       # ❄️
       jnoortheen.nix-ide
     ];
