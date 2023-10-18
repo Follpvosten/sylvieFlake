@@ -21,7 +21,7 @@
       tdesktop schildichat-desktop signal-desktop
       fluffychat
       # Gayming
-      citra-nightly ppsspp-qt
+      citra-nightly ppsspp-sdl-wayland
       retroarchBare prismlauncher
       # Windows
       mono5 wine-staging winetricks
