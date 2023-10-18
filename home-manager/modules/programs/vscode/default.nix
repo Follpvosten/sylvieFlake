@@ -13,6 +13,8 @@
       bungcip.better-toml serayuzgur.crates
       # ❄️
       jnoortheen.nix-ide
+      # terraform
+      hashicorp.terraform
     ];
     
     enableExtensionUpdateCheck = false;
