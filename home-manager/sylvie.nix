@@ -18,7 +18,7 @@
       libsForQt5.kate
       # IM
       (discord.override {withVencord = true;})
-      tdesktop schildichat-desktop signal-desktop
+      tdesktop element-desktop signal-desktop
       fluffychat
       # Gayming
       citra-nightly ppsspp-sdl-wayland
