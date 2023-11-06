@@ -21,4 +21,6 @@
     enable = true;
     nix-direnv.enable = true;
   };
+
+  services.ssh-agent.enable = true;
 }
