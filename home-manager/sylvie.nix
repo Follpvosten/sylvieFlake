@@ -23,6 +23,7 @@
       # Gayming
       citra-nightly ppsspp-sdl-wayland
       retroarchBare prismlauncher
+      lutris
       # Windows
       mono5 wine-staging winetricks
     ];
