@@ -50,6 +50,7 @@
     ripgrep 
     libsForQt5.ark zip rar
     vim wget
+    git
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
