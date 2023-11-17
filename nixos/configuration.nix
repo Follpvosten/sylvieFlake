@@ -45,6 +45,10 @@
     enable = true;
     joinNetworks = [ "48d6023c46a45822" ];
   };
+  networking.firewall = {
+    enable = true;
+    trustedInterfaces = ["ztosikmzde"];
+  };
 
   environment.systemPackages = with pkgs; [ 
     ripgrep 
