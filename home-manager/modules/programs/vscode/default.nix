@@ -32,6 +32,7 @@
       "window.titleBarStyle" = "custom";
       "editor.fontFamily" = "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace";
       "window.autoDetectColorScheme" = true;
+      "workbench.editor.enablePreview" = false;
     };
   };
 }
