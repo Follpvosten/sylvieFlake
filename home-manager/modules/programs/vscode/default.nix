@@ -13,6 +13,9 @@
       bungcip.better-toml serayuzgur.crates
       # ❄️
       jnoortheen.nix-ide
+      # 🐍
+      ms-python.python ms-python.vscode-pylance
+      charliermarsh.ruff matangover.mypy
       # terraform
       hashicorp.terraform
     ];
@@ -21,18 +24,28 @@
     enableUpdateCheck = false;
     mutableExtensionsDir = false;
     userSettings = {
+      # basics
       "files.insertFinalNewline" = true;
       "editor.formatOnSave" = true;
-      "rust-analyzer.cargo.features" = "all";
-      "rust-analyzer.check.command" = "clippy";
-      "git.openRepositoryInParentFolders" = "never";
-      "nix.enableLanguageServer" = true;
-      "nix.serverPath" = "nil";
       "update.mode" = "none";
       "window.titleBarStyle" = "custom";
       "editor.fontFamily" = "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace";
+      "git.openRepositoryInParentFolders" = "never";
       "window.autoDetectColorScheme" = true;
       "workbench.editor.enablePreview" = false;
+      # 🦀
+      "rust-analyzer.cargo.features" = "all";
+      "rust-analyzer.check.command" = "clippy";
+      # ❄️
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nil";
+      # 🐍
+      "[python]" = {
+        "editor.defaultFormatter" = "charliermarsh.ruff";
+      };
+      "mypy.runUsingActiveInterpreter" = true;
+      # TODO figure out if we even need this with mypy?
+      "python.analysis.typeCheckingMode"= "strict";
     };
   };
 }
