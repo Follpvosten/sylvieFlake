@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      godemiche = nixpkgs.lib.nixosSystem { 
+      tablett = nixpkgs.lib.nixosSystem { 
         system = "x86_64-linux";
         modules = [
           ./nixos/configuration.nix

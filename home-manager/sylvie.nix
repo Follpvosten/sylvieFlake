@@ -7,30 +7,15 @@
     homeDirectory = "/home/sylvie";
     packages = with pkgs; [
       # General / Office
-      bitwarden yakuake
-      thunderbird libreoffice-qt
-      nextcloud-client
-      hunspell hunspellDicts.de_DE # :beer:
-      homebank
+      bitwarden
       # Multimedia
-      gimp spotify vlc
+      gimp
       # Puter touching
-      dbeaver-bin mariadb nil
-      libsForQt5.kate
-      libsForQt5.plasma-systemmonitor
-      just
+      just nil lapce
       # IM
-      (discord.override {withVencord = true;})
-      tdesktop element-desktop signal-desktop
-      fluffychat
-      # Gayming
-      ppsspp-sdl-wayland
-      retroarchBare
-      lutris
-      # Windows
-      mono5 wine-staging winetricks
+      tdesktop fractal fluffychat
     ];
   };
 
-  home.stateVersion = "22.11";
+  home.stateVersion = "24.05";
 }

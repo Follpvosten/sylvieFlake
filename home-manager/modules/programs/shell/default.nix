@@ -8,7 +8,8 @@
   programs.starship = {
     enable = true;
     enableFishIntegration = true; # unneeded in any way lol
-    settings = import ./starship.nix;
+    # let's do default for now
+    #settings = import ./starship.nix;
   };
 
   programs.git = {
