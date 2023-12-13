@@ -7,35 +7,14 @@
     homeDirectory = "/home/sylvie";
     packages = with pkgs; [
       # General / Office
-      bitwarden yakuake
-      thunderbird libreoffice-qt
-      nextcloud-client 
-      hunspell hunspellDicts.de_DE # :beer: 
+      bitwarden
       # Multimedia
-      gimp spotify vlc 
+      gimp 
       # Puter touching
-      dbeaver nil 
-      libsForQt5.kate
+      nil lapce
       # IM
-      (discord.override {withVencord = true;})
-      tdesktop element-desktop signal-desktop
-      fluffychat
-      # Gayming
-      citra-nightly ppsspp-sdl-wayland
-      retroarchBare prismlauncher
-      lutris
-      # Windows
-      mono5 wine-staging winetricks
+      tdesktop fractal fluffychat
     ];
-  };
-
-  programs.obs-studio = {
-    enable = true;
-    plugins = with pkgs.obs-studio-plugins; [
-      obs-vkcapture
-      obs-gstreamer
-      obs-backgroundremoval
-    ];    
   };
 
   home.stateVersion = "22.11";

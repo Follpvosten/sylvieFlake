@@ -45,6 +45,10 @@
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
+  
+  # domt go to sleemp
+  services.logind.lidSwitch = "ignore";
+  services.logind.lidSwitchDocked = "ignore";
 
-  system.stateVersion = "22.11";
+  system.stateVersion = "23.05";
 }

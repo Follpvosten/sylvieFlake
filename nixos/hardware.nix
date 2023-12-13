@@ -5,37 +5,36 @@
     binfmt.emulatedSystems = [ "aarch64-linux" ];
     loader = {
       systemd-boot.enable = true;
-      efi.canTouchEfiVariables = !true; # agency of chaos
+      efi.canTouchEfiVariables = !false; # agency of chaos
     };
     
     initrd = {
-      availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "rtsx_usb_sdmmc" ];
+      availableKernelModules = [ "xhci_pci" "usbhid" "usb_storage" "sd_mod" "sdhci_acpi" ];
       kernelModules = [ ];
     };
 
-    kernelModules = [ "kvm-amd" ];
-    extraModulePackages = [ ];
+    kernelModules = [ "r8723bs" ];
 
-    kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
-
-    # https://www.reddit.com/r/zfs/comments/1826lgs/psa_its_not_block_cloning_its_a_data_corruption/
-    # https://github.com/openzfs/zfs/issues/15526#issuecomment-1823737998
-    kernelParams = [ "zfs.zfs_dmu_offset_next_sync=0" ];
+    kernelParams = [
+      # this may be needed, not sure tho
+      #"intel_idle.max_cstate=1"
+    ];
   };
 
 
   fileSystems = {
-    "/" = { 
-      device = "zroot/ROOT/nixos";
-      fsType = "zfs";
+    "/" = {
+      device = "/dev/disk/by-uuid/5ef48d0e-0e07-4bd2-84a8-0ca924789c0e";
+      fsType = "ext4";
     };
     "/boot" = { 
-      device = "/dev/disk/by-uuid/D542-D042";
+      device = "/dev/disk/by-uuid/A215-063B";
       fsType = "vfat";
     };
   };
+  swapDevices = [{device = "/dev/disk/by-uuid/7d7734a2-ecec-4bc2-a8bd-784d3038c713";}];
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth.enable = false;
   networking.useDHCP = lib.mkDefault true;
 
   hardware.enableRedistributableFirmware = true;

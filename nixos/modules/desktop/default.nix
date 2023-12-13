@@ -2,9 +2,7 @@
 {
   # and i mean *way* better.
   imports = [
-    ./kde.nix
+    ./gnome.nix
     ./sound.nix
   ];
-
-  programs.steam.enable = true;
 }
