@@ -52,7 +52,7 @@
 
   environment.systemPackages = with pkgs; [ 
     ripgrep 
-    libsForQt5.ark zip rar
+    libsForQt5.ark zip rar p7zip
     vim wget
     git
   ];
