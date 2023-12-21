@@ -1,5 +1,4 @@
 { config, lib, ... }:
-
 {
   boot = {
     binfmt.emulatedSystems = [ "aarch64-linux" ];
@@ -17,8 +16,9 @@
 
     kernelParams = [
       # this may be needed, not sure tho
-      #"intel_idle.max_cstate=1"
+      "intel_idle.max_cstate=1"
     ];
+    kernel.sysctl = { "vm.swappiness" = 1; };
   };
 
 
