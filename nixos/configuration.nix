@@ -34,21 +34,8 @@
   
   nixpkgs.config.allowUnfree = true;
 
-  networking.hostName = "godemiche";
-  networking.networkmanager.enable = true;
-  networking.hostId = "62323837";
-
   time.timeZone = "Europe/Vienna";
   i18n.defaultLocale = "de_AT.UTF-8";
-
-  services.zerotierone = {
-    enable = true;
-    joinNetworks = [ "48d6023c46a45822" ];
-  };
-  networking.firewall = {
-    enable = true;
-    trustedInterfaces = ["ztosikmzde"];
-  };
 
   environment.systemPackages = with pkgs; [ 
     ripgrep 

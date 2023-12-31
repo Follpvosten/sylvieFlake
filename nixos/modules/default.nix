@@ -5,5 +5,6 @@
     ./desktop
     ./programs
     ./users
+    ./networks
   ];
 }
