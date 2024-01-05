@@ -9,7 +9,7 @@
       # General / Office
       bitwarden
       # Multimedia
-      gimp 
+      gimp
       # Puter touching
       nil lapce
       # IM
