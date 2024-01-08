@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      tablett = nixpkgs.lib.nixosSystem { 
+      tzuyu = nixpkgs.lib.nixosSystem { 
         system = "x86_64-linux";
         modules = [
           ./nixos/configuration.nix

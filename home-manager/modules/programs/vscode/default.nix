@@ -6,18 +6,13 @@
 
     extensions = with pkgs.vscode-extensions; [
       # General
-      usernamehw.errorlens ms-azuretools.vscode-docker 
+      usernamehw.errorlens ms-azuretools.vscode-docker
       matthewpi.caddyfile-support mkhl.direnv
       # 🦀
       vadimcn.vscode-lldb rust-lang.rust-analyzer
       bungcip.better-toml serayuzgur.crates
       # ❄️
       jnoortheen.nix-ide
-      # 🐍
-      ms-python.python ms-python.vscode-pylance
-      charliermarsh.ruff matangover.mypy
-      # terraform
-      hashicorp.terraform
     ];
     
     enableExtensionUpdateCheck = false;

@@ -13,7 +13,7 @@
       # Puter touching
       just nil lapce
       # IM
-      tdesktop fractal fluffychat
+      tdesktop fractal fluffychat discord
     ];
   };
 

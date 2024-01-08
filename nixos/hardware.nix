@@ -4,7 +4,7 @@
     binfmt.emulatedSystems = [ "aarch64-linux" ];
     loader = {
       systemd-boot.enable = true;
-      efi.canTouchEfiVariables = !false; # agency of chaos
+      efi.canTouchEfiVariables = true;
     };
     
     initrd = {
@@ -12,20 +12,35 @@
       kernelModules = [ ];
     };
 
-    kernelModules = [ "r8723bs" ];
+    kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
+    kernelModules = [ ];
 
     kernelParams = [
-      # this may be needed, not sure tho
-      "intel_idle.max_cstate=1"
+      "fbcon=rotate:1"
     ];
     kernel.sysctl = { "vm.swappiness" = 1; };
   };
 
 
   fileSystems = {
-    
+    "/" = {
+      device = "zroot/nixos";
+      fsType = "zfs";
+    };
+    "/boot" = {
+      device = "/dev/disk/by-uuid/5223-0C4F";
+      fsType = "vfat";
+    };
+    "/nix" = {
+      device = "zroot/nix";
+      fsType = "zfs";
+    };
+    "/home" = {
+      device = "zroot/home";
+      fsType = "zfs";
+    };
   };
-  swapDevices = [{device = "/dev/disk/by-uuid/";}];
+  swapDevices = [{device = "/dev/disk/by-uuid/50d1c226-fce7-4f9c-bd10-2201bab69ee8";}];
 
   hardware.bluetooth.enable = true;
   networking.useDHCP = lib.mkDefault true;

@@ -3,5 +3,6 @@
   imports = [
     ./firefox
     ./shell
+    ./vscode
   ];
 }
