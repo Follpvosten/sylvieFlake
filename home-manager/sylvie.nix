@@ -16,6 +16,7 @@
       # Puter touching
       dbeaver nil 
       libsForQt5.kate
+      libsForQt5.plasma-systemmonitor
       # IM
       (discord.override {withVencord = true;})
       tdesktop element-desktop signal-desktop
