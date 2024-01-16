@@ -30,14 +30,5 @@
     ];
   };
 
-  programs.obs-studio = {
-    enable = true;
-    plugins = with pkgs.obs-studio-plugins; [
-      obs-vkcapture
-      obs-gstreamer
-      obs-backgroundremoval
-    ];    
-  };
-
   home.stateVersion = "22.11";
 }
