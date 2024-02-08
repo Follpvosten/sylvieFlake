@@ -9,12 +9,13 @@
       # General / Office
       bitwarden yakuake
       thunderbird libreoffice-qt
-      nextcloud-client 
-      hunspell hunspellDicts.de_DE # :beer: 
+      nextcloud-client
+      hunspell hunspellDicts.de_DE # :beer:
+      homebank
       # Multimedia
-      gimp spotify vlc 
+      gimp spotify vlc
       # Puter touching
-      dbeaver nil 
+      dbeaver mariadb nil
       libsForQt5.kate
       libsForQt5.plasma-systemmonitor
       # IM
