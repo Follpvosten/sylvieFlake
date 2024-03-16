@@ -23,7 +23,7 @@
       tdesktop element-desktop signal-desktop
       fluffychat
       # Gayming
-      citra-nightly ppsspp-sdl-wayland
+      ppsspp-sdl-wayland
       retroarchBare prismlauncher
       lutris
       # Windows
