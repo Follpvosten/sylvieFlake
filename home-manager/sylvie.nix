@@ -15,7 +15,7 @@
       # Multimedia
       gimp spotify vlc
       # Puter touching
-      dbeaver mariadb nil
+      dbeaver-bin mariadb nil
       libsForQt5.kate
       libsForQt5.plasma-systemmonitor
       # IM
