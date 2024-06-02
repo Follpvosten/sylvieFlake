@@ -24,7 +24,7 @@
       fluffychat
       # Gayming
       ppsspp-sdl-wayland
-      retroarchBare prismlauncher
+      retroarchBare
       lutris
       # Windows
       mono5 wine-staging winetricks
