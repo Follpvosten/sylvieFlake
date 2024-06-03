@@ -29,6 +29,11 @@
       device = "zroot/ROOT/nixos";
       fsType = "zfs";
     };
+    "/nix" = {
+      device = "zroot/ROOT/nixos/nix";
+      fsType = "zfs";
+      neededForBoot = true;
+    };
     "/boot" = { 
       device = "/dev/disk/by-uuid/D542-D042";
       fsType = "vfat";
