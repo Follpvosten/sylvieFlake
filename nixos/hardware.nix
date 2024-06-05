@@ -27,7 +27,7 @@
       fsType = "zfs";
     };
     "/boot" = {
-      device = "/dev/disk/by-uuid/5223-0C4F";
+      device = "/dev/disk/by-uuid/4721-8607";
       fsType = "vfat";
     };
     "/nix" = {
