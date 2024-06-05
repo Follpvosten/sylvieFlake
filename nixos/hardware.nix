@@ -18,7 +18,6 @@
     kernelParams = [
       "fbcon=rotate:1"
     ];
-    kernel.sysctl = { "vm.swappiness" = 1; };
   };
 
 
@@ -40,7 +39,6 @@
       fsType = "zfs";
     };
   };
-  swapDevices = [{device = "/dev/disk/by-uuid/50d1c226-fce7-4f9c-bd10-2201bab69ee8";}];
 
   hardware.bluetooth.enable = true;
   networking.useDHCP = lib.mkDefault true;
