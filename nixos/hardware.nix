@@ -4,6 +4,7 @@
     binfmt.emulatedSystems = [ "aarch64-linux" ];
     loader = {
       systemd-boot.enable = true;
+      systemd-boot.consoleMode = "0";
       efi.canTouchEfiVariables = true;
     };
     
