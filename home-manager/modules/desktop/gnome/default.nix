@@ -13,6 +13,8 @@
   dconf.settings = {
     # interface preferences
     "org/gnome/desktop/interface".show-battery-percentage = true;
+    # fractional scaling
+    "org/gnome/mutter".experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];
     # power stuff
     "org/gnome/settings-daemon/plugins/color".night-light-enabled = true;
     "org/gnome/desktop/session".idle-delay = lib.hm.gvariant.mkUint32 0;
@@ -22,5 +24,10 @@
       sleep-inactive-battery-type = "suspend";
       sleep-inactive-battery-timeout = 1800;
     };
+  };
+  # monitor config
+  home.file."monitor-config" = {
+    text = builtins.readFile ./monitors.xml;
+    target = ".config/monitors.xml";
   };
 }
