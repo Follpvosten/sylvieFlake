@@ -15,8 +15,9 @@
     "org/gnome/desktop/interface".show-battery-percentage = true;
     # fractional scaling
     "org/gnome/mutter".experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];
+    # currently doesn't work on this device for some reason :/
+    "org/gnome/settings-daemon/plugins/color".night-light-enabled = false;
     # power stuff
-    "org/gnome/settings-daemon/plugins/color".night-light-enabled = true;
     "org/gnome/desktop/session".idle-delay = lib.hm.gvariant.mkUint32 0;
     "org/gnome/settings-daemon/plugins/power" = {
       power-saver-profile-on-low-battery = true;
