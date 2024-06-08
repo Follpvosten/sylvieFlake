@@ -7,7 +7,7 @@
     homeDirectory = "/home/sylvie";
     packages = with pkgs; [
       # General / Office
-      bitwarden
+      bitwarden libreoffice
       # Multimedia
       gimp
       # Puter touching
