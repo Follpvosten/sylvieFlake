@@ -15,6 +15,8 @@
       # IM
       tdesktop fractal fluffychat
       discord signal-desktop
+      # social
+      tuba
     ];
   };
 
