@@ -5,8 +5,12 @@
     id = 0;
     name = "default";
     path = "lu044f5h.default";
-    search.order = [ "DuckDuckGo" ];
-    search.force = true;
+    search = {
+      force = true;
+      default = "DuckDuckGo";
+      order = [ "DuckDuckGo" ];
+      engines."Google".metaData.hidden = true;
+    };
     settings = {
       "browser.startup.homepage" = "https://start.duckduckgo.com";
       "browser.newtabpage.enabled" = false;
