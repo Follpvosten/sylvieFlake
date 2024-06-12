@@ -4,6 +4,7 @@
       <x>0</x>
       <y>0</y>
       <primary>yes</primary>
+      <scale>1.25</scale>
       <transform>
         <rotation>right</rotation>
         <flipped>no</flipped>

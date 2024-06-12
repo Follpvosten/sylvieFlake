@@ -8,9 +8,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nur.url = "github:nix-community/NUR";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nur, ... }@inputs: {
     nixosConfigurations = {
       tzuyu = nixpkgs.lib.nixosSystem { 
         system = "x86_64-linux";
@@ -22,6 +24,8 @@
             home-manager.useGlobalPkgs = !false;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.backupFileExtension = "bak";
+            home-manager.sharedModules = [ nur.hmModules.nur ];
             home-manager.users.sylvie = import home-manager/sylvie.nix;
           }
         ];

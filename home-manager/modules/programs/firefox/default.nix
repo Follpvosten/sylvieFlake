@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   programs.firefox.enable = true;
   programs.firefox.profiles."default-sylvie" = {
@@ -14,6 +14,14 @@
       "browser.search.suggest.enabled" = false;
       "browser.urlbar.suggest.searches" = false;
       "browser.tabs.insertAfterCurrent" = true;
+      "extensions.autoDisableScopes" = 0;
+      "extensions.pocket.enabled" = false;
+      "identity.fxaccounts.enabled" = false;
+      "identity.fxaccounts.toolbar.enabled" = false;
     };
+    extensions = with config.nur.repos.rycee.firefox-addons; [
+      ublock-origin
+      bitwarden
+    ];
   };
 }
