@@ -37,10 +37,10 @@
               "home-button"
               "urlbar-container"
               "downloads-button"
-              "unified-extensions-button"
               "ublock0_raymondhill_net-browser-action"
               # why is bitwarden called that???
               "_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action"
+              "unified-extensions-button"
           ];
           "toolbar-menubar" = [
               "menubar-items"
