@@ -22,6 +22,10 @@
       "extensions.pocket.enabled" = false;
       "identity.fxaccounts.enabled" = false;
       "identity.fxaccounts.toolbar.enabled" = false;
+      "browser.warnOnQuitShortcut" = false;
+      "layout.spellcheckDefault" = 0;
+      "intl.locale.requested" = "de,en-US";
+      "intl.regional_prefs.use_os_locales" = true;
       "browser.uiCustomization.state" = builtins.toJSON {
         "placements" = {
           "widget-overflow-fixed-list" = [];
