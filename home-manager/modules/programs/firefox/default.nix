@@ -26,6 +26,7 @@
       "layout.spellcheckDefault" = 0;
       "intl.locale.requested" = "de,en-US";
       "intl.regional_prefs.use_os_locales" = true;
+      "datareporting.healthreport.uploadEnabled" = false;
       "browser.uiCustomization.state" = builtins.toJSON {
         "placements" = {
           "widget-overflow-fixed-list" = [];
