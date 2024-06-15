@@ -13,8 +13,14 @@
   dconf.settings = {
     # interface preferences
     "org/gnome/desktop/interface".show-battery-percentage = true;
-    # fractional scaling
-    "org/gnome/mutter".experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];
+    # apparently this is needed for keyboard stuff
+    "org/gnome/desktop/input-sources".show-all-sources = true;
+  
+    "org/gnome/mutter" = {
+      # fractional scaling
+      experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];
+      edge-tiling = true;
+    };
     # currently doesn't work on this device for some reason :/
     "org/gnome/settings-daemon/plugins/color".night-light-enabled = false;
     # power stuff
@@ -26,6 +32,7 @@
       sleep-inactive-battery-timeout = 1800;
     };
     "org/gnome/nautilus/icon-view".default-zoom-level = "small-plus";
+    "org/gnome/shell/app-switcher".current-workspace-only = true;
   };
   # monitor config
   home.file."monitor-config" = {
