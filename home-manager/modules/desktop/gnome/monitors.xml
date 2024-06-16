@@ -3,12 +3,8 @@
     <logicalmonitor>
       <x>0</x>
       <y>0</y>
-      <primary>yes</primary>
       <scale>1.25</scale>
-      <transform>
-        <rotation>right</rotation>
-        <flipped>no</flipped>
-      </transform>
+      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>DSI-1</connector>
@@ -17,8 +13,8 @@
           <serial>unknown</serial>
         </monitorspec>
         <mode>
-          <width>1200</width>
-          <height>1920</height>
+          <width>1920</width>
+          <height>1200</height>
           <rate>50.002</rate>
         </mode>
       </monitor>
