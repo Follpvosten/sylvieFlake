@@ -1,4 +1,4 @@
-{ config, ... }:
+{ ... }:
 {
   services.xserver = {
     enable = true;
@@ -9,11 +9,12 @@
     desktopManager.gnome.enable = true;
   };
   # link monitor config from user
-  systemd.tmpfiles.settings."80-gdm-monitors" = {
-    "${config.users.users.gdm.home}/.config/monitors.xml" = {
-      "L+" = {
-        argument = "${config.users.users.sylvie.home}/.config/monitors.xml";
+  programs.dconf.profiles = {
+    gdm.databases = [{
+      settings = {
+        # GDM by default is always unscaled compared to the GNOME lockscreen.
+        "org/gnome/mutter".experimental-features = [ "scale-monitor-framebuffer" ];
       };
-    };
+    }];
   };
 }
