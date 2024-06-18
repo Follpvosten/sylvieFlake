@@ -15,6 +15,9 @@
     enable = true;
     userName = "Sylvie Hacker"; # pay her a fee, also s/hack/heck/
     userEmail = "sylvie@karpador.xyz";
+    extraConfig = {
+      help.autoCorrect = "prompt";
+    };
   };
 
   programs.direnv = {
