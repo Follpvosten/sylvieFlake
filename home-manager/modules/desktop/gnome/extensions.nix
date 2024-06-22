@@ -1,11 +1,7 @@
 { pkgs, ... }:
 {
-  # enable/disable extensions completely
-  dconf.settings."org/gnome/shell".disable-user-extensions = false;
-  home.packages = with pkgs.gnomeExtensions; [
-    appindicator
-  ];
-  dconf.settings."org/gnome/shell".enabled-extensions = [
-    "appindicatorsupport@rgcjonas.gmail.com"
+  programs.gnome-shell.enable = true;
+  programs.gnome-shell.extensions = with pkgs.gnomeExtensions; [
+    { package = appindicator; }
   ];
 }
