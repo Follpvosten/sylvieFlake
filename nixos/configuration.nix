@@ -1,3 +1,4 @@
+# this file is generally where stuff goes that doesn't have its own module (yet)
 { pkgs, ... }:
 {
 
@@ -45,6 +46,11 @@
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
+
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
 
   system.stateVersion = "22.11";
 }

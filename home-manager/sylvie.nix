@@ -18,6 +18,7 @@
       dbeaver-bin mariadb nil
       libsForQt5.kate
       libsForQt5.plasma-systemmonitor
+      just
       # IM
       (discord.override {withVencord = true;})
       tdesktop element-desktop signal-desktop
