@@ -27,6 +27,7 @@
       "intl.locale.requested" = "de,en-US";
       "intl.regional_prefs.use_os_locales" = true;
       "datareporting.healthreport.uploadEnabled" = false;
+      "browser.translations.automaticallyPopup" = false;
       "browser.uiCustomization.state" = builtins.toJSON (import ./uiconfig.nix);
     };
     extensions = with config.nur.repos.rycee.firefox-addons; [
