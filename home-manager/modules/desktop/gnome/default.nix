@@ -34,8 +34,5 @@
     "org/gnome/shell/app-switcher".current-workspace-only = true;
   };
   # monitor config
-  home.file."monitor-config" = {
-    text = builtins.readFile ./monitors.xml;
-    target = ".config/monitors.xml";
-  };
+  xdg.configFile."monitors.xml".source = ./monitors.xml;
 }
