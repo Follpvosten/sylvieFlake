@@ -31,7 +31,6 @@
       sleep-inactive-battery-type = "suspend";
       sleep-inactive-battery-timeout = 1800;
     };
-    "org/gnome/nautilus/icon-view".default-zoom-level = "small-plus";
     "org/gnome/shell/app-switcher".current-workspace-only = true;
   };
   # monitor config
