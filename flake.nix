@@ -2,7 +2,7 @@
   description = "yvlsie confing";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable"; # :3 :)
+    nixpkgs.url = "nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
