@@ -1,10 +1,9 @@
 # this file is generally where stuff goes that doesn't have its own module (yet)
 { pkgs, ... }:
 {
-
-  imports = [ 
-    ./modules 
-    ./hardware.nix  
+  imports = [
+    ./modules
+    ./hardware.nix
   ];
 
   nix = {
@@ -32,14 +31,14 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
-  
+
   nixpkgs.config.allowUnfree = true;
 
   time.timeZone = "Europe/Vienna";
   i18n.defaultLocale = "de_AT.UTF-8";
 
-  environment.systemPackages = with pkgs; [ 
-    ripgrep 
+  environment.systemPackages = with pkgs; [
+    ripgrep
     libsForQt5.ark zip rar p7zip
     vim wget
     git

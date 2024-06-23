@@ -14,7 +14,7 @@
       # ❄️
       jnoortheen.nix-ide
     ];
-    
+
     enableExtensionUpdateCheck = false;
     enableUpdateCheck = false;
     mutableExtensionsDir = false;

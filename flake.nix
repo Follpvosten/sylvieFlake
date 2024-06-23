@@ -14,11 +14,11 @@
 
   outputs = { self, nixpkgs, home-manager, nur, ... }@inputs: {
     nixosConfigurations = {
-      tzuyu = nixpkgs.lib.nixosSystem { 
+      tzuyu = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./nixos/configuration.nix
-          
+
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = !false;

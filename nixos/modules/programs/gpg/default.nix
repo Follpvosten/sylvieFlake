@@ -1,4 +1,4 @@
-{ ... }: 
+{ ... }:
 {
   programs.gnupg.agent = {
     enable = false;

@@ -1,7 +1,6 @@
-{ ... }: 
+{ ... }:
 {
-
-  imports = [ ./ssh.nix ]; 
+  imports = [ ./ssh.nix ];
 
   programs.fish.enable = true;
 

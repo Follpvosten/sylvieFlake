@@ -15,7 +15,7 @@
     "org/gnome/desktop/interface".show-battery-percentage = true;
     # apparently this is needed for keyboard stuff
     "org/gnome/desktop/input-sources".show-all-sources = true;
-  
+
     "org/gnome/mutter" = {
       # fractional scaling
       experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];

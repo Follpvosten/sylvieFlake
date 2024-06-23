@@ -7,7 +7,7 @@
       systemd-boot.consoleMode = "0";
       efi.canTouchEfiVariables = true;
     };
-    
+
     initrd = {
       availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "sd_mod" "sdhci_pci" ];
       kernelModules = [ ];
