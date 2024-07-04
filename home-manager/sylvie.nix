@@ -8,6 +8,7 @@
     packages = with pkgs; [
       # General / Office
       bitwarden libreoffice
+      diebahn
       # Multimedia
       gimp
       # Puter touching
