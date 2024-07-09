@@ -32,5 +32,10 @@
     ];
   };
 
+  xdg.configFile."containers/storage.conf".text = ''
+  [storage]
+  driver = "vfs"
+  '';
+
   home.stateVersion = "22.11";
 }
