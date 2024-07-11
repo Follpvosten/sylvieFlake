@@ -2,8 +2,8 @@
 {
   imports = [
     ./desktop
-    ./programs
-    ./users
-    ./networks
+    ./users.nix
+    ./programs.nix
+    ./networks.nix
   ];
 }
