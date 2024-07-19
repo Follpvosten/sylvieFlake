@@ -5,7 +5,7 @@
     ./extensions.nix
   ];
 
-  home.packages = with pkgs.gnome; [
+  home.packages = with pkgs; [
     gnome-tweaks
   ];
 
