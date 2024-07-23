@@ -7,7 +7,7 @@
     matchBlocks = {
       "kcloud" = {
         user = "wolfie";
-        hostname = "cloud.karpador.xyz";
+        hostname = "89.58.16.80";
         port = 65522;
       };
       "kbackup" = {
