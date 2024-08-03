@@ -39,6 +39,14 @@
       device = "zroot/home";
       fsType = "zfs";
     };
+    "/home/sylvie" = {
+      device = "zroot/home/sylvie";
+      fsType = "zfs";
+    };
+    "/home/sylvie/Videos" = {
+      device = "zroot/data/video";
+      fsType = "zfs";
+    };
   };
 
   hardware.bluetooth.enable = true;
