@@ -41,5 +41,9 @@
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
 
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
   system.stateVersion = "24.05";
 }
