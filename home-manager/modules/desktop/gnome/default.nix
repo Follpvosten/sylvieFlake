@@ -13,7 +13,10 @@
   dconf.settings = {
     # UI/UX settings
     "org/gnome/shell/app-switcher".current-workspace-only = true;
-    "org/gnome/desktop/interface".show-battery-percentage = true;
+    "org/gnome/desktop/interface" = {
+      show-battery-percentage = true;
+      monospace-font-name = "FiraCode Nerd Font 10";
+    };
     "org/gnome/shell".favorite-apps = lib.hm.gvariant.mkArray "s" [
       "firefox.desktop"
       "org.gnome.Geary.desktop"
