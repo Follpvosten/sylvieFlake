@@ -42,5 +42,11 @@
     dockerCompat = true;
   };
 
+  # TODO wait for tuxedo-rs to be usable
+  # hardware.tuxedo-rs = {
+  #   enable = true;
+  #   tailor-gui.enable = true;
+  # };
+
   system.stateVersion = "22.11";
 }
