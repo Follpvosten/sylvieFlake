@@ -22,7 +22,7 @@
       # IM
       (discord.override {withVencord = true;})
       tdesktop element-desktop signal-desktop
-      fluffychat
+      fractal
       # Gayming
       ppsspp-sdl-wayland
       retroarchBare
