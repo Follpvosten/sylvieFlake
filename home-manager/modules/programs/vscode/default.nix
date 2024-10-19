@@ -13,9 +13,6 @@
       bungcip.better-toml serayuzgur.crates
       # ❄️
       jnoortheen.nix-ide
-      # 🐍
-      ms-python.python ms-python.vscode-pylance
-      charliermarsh.ruff matangover.mypy
       # terraform
       hashicorp.terraform
     ];
@@ -39,13 +36,6 @@
       # ❄️
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nil";
-      # 🐍
-      "[python]" = {
-        "editor.defaultFormatter" = "charliermarsh.ruff";
-      };
-      "mypy.runUsingActiveInterpreter" = true;
-      # TODO figure out if we even need this with mypy?
-      "python.analysis.typeCheckingMode"= "strict";
     };
   };
 }
