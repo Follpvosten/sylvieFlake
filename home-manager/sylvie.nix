@@ -16,8 +16,8 @@
       gimp spotify vlc
       # Puter touching
       dbeaver-bin mariadb nil
-      libsForQt5.kate
-      libsForQt5.plasma-systemmonitor
+      kdePackages.kate
+      kdePackages.plasma-systemmonitor
       just
       # IM
       (discord.override {withVencord = true;})
