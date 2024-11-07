@@ -36,6 +36,10 @@
       # ❄️
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nil";
+      # TODO: I hate this
+      "nix.serverSettings" = {
+        nil.formatting.command = ["cat"];
+      };
     };
   };
 }
