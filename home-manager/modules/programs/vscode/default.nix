@@ -34,13 +34,10 @@
       # ❄️
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nil";
-      # 🐍
-      "[python]" = {
-        "editor.defaultFormatter" = "charliermarsh.ruff";
+      # TODO: I hate this
+      "nix.serverSettings" = {
+        nil.formatting.command = ["cat"];
       };
-      "mypy.runUsingActiveInterpreter" = true;
-      # TODO figure out if we even need this with mypy?
-      "python.analysis.typeCheckingMode"= "strict";
     };
   };
 }
