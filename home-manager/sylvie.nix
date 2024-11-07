@@ -18,7 +18,7 @@
       dbeaver-bin mariadb nil
       kdePackages.kate
       kdePackages.plasma-systemmonitor
-      just
+      just cargo
       # IM
       (discord.override {withVencord = true;})
       tdesktop element-desktop signal-desktop
