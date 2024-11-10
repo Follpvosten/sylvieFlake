@@ -6,15 +6,11 @@
     ./hardware.nix
   ];
 
-  nix = {
-    settings = {
-      keep-outputs = true;
-      keep-derivations = true;
-      experimental-features = [ "nix-command" "flakes" ];
-      auto-optimise-store = true;
-    };
-
-    package = pkgs.nixFlakes;
+  nix.settings = {
+    keep-outputs = true;
+    keep-derivations = true;
+    experimental-features = [ "nix-command" "flakes" ];
+    auto-optimise-store = true;
   };
 
   console = {
