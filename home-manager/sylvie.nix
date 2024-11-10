@@ -14,7 +14,7 @@
       # Puter touching
       just nil lapce
       # IM
-      tdesktop fractal fluffychat
+      tdesktop fractal
       discord signal-desktop
       # social
       tuba
