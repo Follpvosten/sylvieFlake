@@ -13,9 +13,7 @@
       kernelModules = [ ];
     };
 
-    kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
     kernelModules = [ ];
-
     kernelParams = [
       "video=DSI-1:panel_orientation=right_side_up"
     ];
