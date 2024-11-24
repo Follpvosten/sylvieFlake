@@ -26,7 +26,7 @@
       # Gayming
       ppsspp-sdl-wayland
       retroarchBare
-      lutris
+      lutris lime3ds
       # Windows
       mono5 wine-staging winetricks
     ];
