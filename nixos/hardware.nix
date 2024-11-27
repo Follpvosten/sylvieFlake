@@ -49,6 +49,7 @@
 
   hardware.bluetooth.enable = true;
   networking.useDHCP = lib.mkDefault true;
+  systemd.services.modem-manager.enable = false;
 
   hardware.enableRedistributableFirmware = true;
 
