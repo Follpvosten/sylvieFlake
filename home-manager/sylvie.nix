@@ -27,6 +27,8 @@
       ppsspp-sdl-wayland
       retroarchBare
       lutris lime3ds
+      obs-studio obs-studio-plugins.obs-vkcapture
+      obs-studio-plugins.obs-pipewire-audio-capture
       # Windows
       mono5 wine-staging winetricks
     ];
