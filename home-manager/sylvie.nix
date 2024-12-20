@@ -20,7 +20,7 @@
       kdePackages.plasma-systemmonitor
       just cargo
       # IM
-      (discord.override {withVencord = true;})
+      vesktop
       tdesktop element-desktop signal-desktop
       fractal
       # Gayming
