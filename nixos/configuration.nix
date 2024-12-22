@@ -18,9 +18,7 @@
     useXkbConfig = true;
   };
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
+  fonts.packages = [ pkgs.nerd-fonts.fira-code ];
 
   nixpkgs.config.allowUnfree = true;
 
