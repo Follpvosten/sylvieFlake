@@ -19,13 +19,14 @@
         modules = [
           ./nixos/configuration.nix
 
+          nur.modules.nixos.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = !false;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.backupFileExtension = "bak";
-            home-manager.sharedModules = [ nur.hmModules.nur ];
+            home-manager.sharedModules = [ nur.modules.homeManager.default ];
             home-manager.users.sylvie = import home-manager/sylvie.nix;
           }
         ];

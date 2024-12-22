@@ -1,4 +1,4 @@
-{ config, ... }:
+{ pkgs, ... }:
 {
   programs.firefox.enable = true;
   programs.firefox.profiles."default-sylvie" = {
@@ -30,7 +30,7 @@
       "browser.translations.automaticallyPopup" = false;
       "browser.uiCustomization.state" = builtins.toJSON (import ./uiconfig.nix);
     };
-    extensions = with config.nur.repos.rycee.firefox-addons; [
+    extensions = with pkgs.nur.repos.rycee.firefox-addons; [
       ublock-origin
       bitwarden
       consent-o-matic
