@@ -1,5 +1,8 @@
 { pkgs, lib, ... }:
-{
+let
+  gvariant = lib.hm.gvariant;
+  mkStrArray = arr: gvariant.mkArray "s" arr;
+in {
   imports = [
     ./apps.nix
     ./extensions.nix
@@ -17,20 +20,20 @@
       show-battery-percentage = true;
       monospace-font-name = "FiraCode Nerd Font 10";
     };
-    "org/gnome/shell".favorite-apps = lib.hm.gvariant.mkArray "s" [
+    "org/gnome/shell".favorite-apps = mkStrArray [
       "firefox.desktop"
       "org.gnome.Geary.desktop"
       "org.gnome.Calendar.desktop"
       "org.gnome.Nautilus.desktop"
       "org.gnome.Console.desktop"
     ];
-    "org/gnome/desktop/search-providers".disabled = lib.hm.gvariant.mkArray "s" [
+    "org/gnome/desktop/search-providers".disabled = mkStrArray [
       "org.gnome.Nautilus.desktop"
       "org.gnome.Epiphany.desktop"
     ];
     "org/freedesktop/tracker/miner/files" = {
-      index-single-directories = lib.hm.gvariant.mkArray "s" [];
-      index-recursive-directories = lib.hm.gvariant.mkArray "s" [];
+      index-single-directories = mkStrArray [];
+      index-recursive-directories = mkStrArray [];
     };
     # hmm, adding custom wallpapers with light/dark variants seems pretty easy!
     "org/gnome/desktop/background" = {
@@ -49,13 +52,13 @@
 
     "org/gnome/mutter" = {
       # fractional scaling
-      experimental-features = lib.hm.gvariant.mkArray "s" ["scale-monitor-framebuffer"];
+      experimental-features = mkStrArray ["scale-monitor-framebuffer"];
       edge-tiling = true;
     };
     # currently doesn"t work on this device for some reason :/
     "org/gnome/settings-daemon/plugins/color".night-light-enabled = false;
     # power stuff
-    "org/gnome/desktop/session".idle-delay = lib.hm.gvariant.mkUint32 0;
+    "org/gnome/desktop/session".idle-delay = gvariant.mkUint32 0;
     "org/gnome/settings-daemon/plugins/power" = {
       power-saver-profile-on-low-battery = true;
       sleep-inactive-ac-type = "nothing";
