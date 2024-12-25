@@ -35,6 +35,12 @@ in {
       index-single-directories = mkStrArray [];
       index-recursive-directories = mkStrArray [];
     };
+    "org/gnome/desktop/wm/keybindings" = {
+      switch-applications = mkStrArray [];
+      switch-applications-backward = mkStrArray [];
+      switch-windows = mkStrArray ["<Alt>Tab"];
+      switch-windows-backward = mkStrArray ["<Shift><Alt>Tab"];
+    };
     # hmm, adding custom wallpapers with light/dark variants seems pretty easy!
     "org/gnome/desktop/background" = {
       picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/amber-l.jxl";
