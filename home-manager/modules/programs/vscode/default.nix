@@ -30,6 +30,7 @@
       "git.openRepositoryInParentFolders" = "never";
       "window.autoDetectColorScheme" = true;
       "workbench.editor.enablePreview" = false;
+      "chat.commandCenter.enabled" = false;
       # 🦀
       "rust-analyzer.cargo.features" = "all";
       "rust-analyzer.check.command" = "clippy";
