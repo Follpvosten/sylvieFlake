@@ -15,7 +15,7 @@
 
     kernelModules = [ ];
     kernelParams = [
-      "zfs.zfs_arc_max=134217728"
+      "zfs.zfs_arc_max=67108864"
       "video=DSI-1:panel_orientation=right_side_up"
     ];
   };
