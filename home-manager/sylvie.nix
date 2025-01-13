@@ -30,7 +30,7 @@
       obs-studio obs-studio-plugins.obs-vkcapture
       obs-studio-plugins.obs-pipewire-audio-capture
       # Windows
-      mono5 wine-staging winetricks
+      mono wine-staging winetricks
     ];
   };
 
