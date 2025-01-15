@@ -47,6 +47,7 @@
       fsType = "zfs";
     };
   };
+  swapDevices = [{device="/dev/zvol/zroot/swap";}];
 
   hardware.bluetooth.enable = true;
   networking.useDHCP = lib.mkDefault true;
