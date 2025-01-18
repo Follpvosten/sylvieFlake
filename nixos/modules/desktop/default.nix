@@ -23,9 +23,9 @@
         "gnome-session-binary"
       ];
       guiApps = [
-        "kgx" "nautilus" "totem" "geary" "gnome-calendar" "gnome-clocks" "diebahn"
+        "nautilus" "totem" "geary" "gnome-calendar" "gnome-clocks" "diebahn"
         "snapshot" "firefox" "codium" "fractal" "signal-desktop" "telegram-desktop"
-        "dev.geopjr.Tuba"
+        "dev.geopjr.Tuba" ".gnome-terminal" "gnome-terminal-server"
       ];
     in
       map (x: { name = x; type = "desktop"; }) desktopProcesses

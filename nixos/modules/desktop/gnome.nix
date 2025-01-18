@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services.xserver = {
     enable = true;
@@ -18,4 +18,7 @@
       };
     }];
   };
+  # the new one sucks
+  environment.gnome.excludePackages = [ pkgs.gnome-console ];
+  environment.systemPackages = [ pkgs.gnome-terminal ];
 }

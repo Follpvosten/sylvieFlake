@@ -25,7 +25,7 @@ in {
       "org.gnome.Geary.desktop"
       "org.gnome.Calendar.desktop"
       "org.gnome.Nautilus.desktop"
-      "org.gnome.Console.desktop"
+      "org.gnome.Terminal.desktop"
     ];
     "org/gnome/desktop/search-providers".disabled = mkStrArray [
       "org.gnome.Nautilus.desktop"
