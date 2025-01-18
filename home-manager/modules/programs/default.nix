@@ -5,4 +5,6 @@
     ./shell
     ./vscode
   ];
+
+  programs.emacs.enable = true;
 }
