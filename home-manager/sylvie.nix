@@ -18,6 +18,11 @@
       discord signal-desktop
       # social
       tuba
+      (retroarch.withCores (
+        cores: with cores; [
+          desmume
+        ]
+      ))
     ];
   };
 
