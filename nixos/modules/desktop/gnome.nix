@@ -7,6 +7,8 @@
 
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
+
+    excludePackages = [ pkgs.xterm ];
   };
   programs.dconf.profiles = {
     gdm.databases = [{
@@ -19,6 +21,8 @@
     }];
   };
   # the new one sucks
-  environment.gnome.excludePackages = [ pkgs.gnome-console ];
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-console gnome-tour gnome-logs yelp
+  ];
   environment.systemPackages = [ pkgs.gnome-terminal ];
 }

@@ -12,7 +12,7 @@
       # Multimedia
       gimp
       # Puter touching
-      just nil lapce
+      just nil
       # IM
       tdesktop fractal
       discord signal-desktop
