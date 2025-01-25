@@ -20,6 +20,7 @@ in {
       show-battery-percentage = true;
       monospace-font-name = "FiraCode Nerd Font 10";
     };
+    "org/gnome/desktop/input-sources".xkb-options = mkStrArray [];
     "org/gnome/shell".favorite-apps = mkStrArray [
       "firefox.desktop"
       "org.gnome.Geary.desktop"

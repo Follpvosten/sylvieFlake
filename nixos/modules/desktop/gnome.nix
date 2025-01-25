@@ -2,8 +2,12 @@
 {
   services.xserver = {
     enable = true;
-    xkb.layout = "us";
-    xkb.variant = "de_se_fi";
+    xkb = {
+      layout = "us";
+      variant = "de_se_fi";
+      # unset to make ctrl-backspace work in gtk apps
+      options = "";
+    };
 
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
