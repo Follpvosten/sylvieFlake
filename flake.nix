@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nur, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, nur, ... }: {
     nixosConfigurations = {
       tzuyu = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -25,10 +25,8 @@
           nur.modules.nixos.default
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = !false;
+            home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.backupFileExtension = "bak";
             home-manager.sharedModules = [ nur.modules.homeManager.default ];
             home-manager.users.sylvie = import home-manager/sylvie.nix;
           }
