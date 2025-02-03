@@ -3,8 +3,8 @@
   # this could be done way better.
   imports = [
     ./desktop
-    ./programs
-    ./users
-    ./networks
+    ./programs.nix
+    ./users.nix
+    ./networks.nix
   ];
 }

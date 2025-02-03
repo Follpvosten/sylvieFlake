@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  programs.fish.enable = true;
   users.users.sylvie = {
     isNormalUser = true;
     description = "Sylvie Hacker";
