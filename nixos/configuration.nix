@@ -39,6 +39,10 @@
     dockerCompat = true;
   };
 
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
   # TODO wait for tuxedo-rs to be usable
   # hardware.tuxedo-rs = {
   #   enable = true;
