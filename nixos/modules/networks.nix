@@ -6,7 +6,13 @@
   networking.hostId = "62323837";
 
   # I do use this on desktop
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+    settings.connectivity = {
+      uri = "http://owo.karp.lol";
+      response = "what's this?";
+    };
+  };
 
   networking.firewall = {
     enable = true;
