@@ -29,7 +29,7 @@
     ripgrep
     zip rar p7zip
     vim wget
-    git
+    git htop
     adw-gtk3
   ];
 
