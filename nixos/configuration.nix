@@ -1,7 +1,6 @@
 # this file is generally where stuff goes that doesn't have its own module (yet)
 { pkgs, ... }:
 {
-
   imports = [ 
     ./modules 
     ./hardware.nix  
@@ -30,7 +29,7 @@
     ripgrep 
     kdePackages.ark zip rar p7zip
     vim wget
-    git
+    git htop
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
