@@ -16,8 +16,11 @@
     kernelModules = [ ];
     kernelParams = [
       "zfs.zfs_arc_max=67108864"
+      # attempt to *actually* limit arc size...
+      "zfs.zfs_arc_sys_free=6442450944"
       "video=DSI-1:panel_orientation=right_side_up"
     ];
+    kernel.sysctl."vm.swappiness" = 1;
   };
 
 
