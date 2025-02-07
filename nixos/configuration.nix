@@ -27,7 +27,7 @@
 
   environment.systemPackages = with pkgs; [ 
     ripgrep 
-    kdePackages.ark zip rar p7zip
+    zip rar p7zip
     vim wget
     git htop
   ];
