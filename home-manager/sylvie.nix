@@ -7,22 +7,17 @@
     homeDirectory = "/home/sylvie";
     packages = with pkgs; [
       # General / Office
-      bitwarden yakuake
-      thunderbird libreoffice-qt
+      bitwarden diebahn
+      thunderbird libreoffice
       nextcloud-client
-      hunspell hunspellDicts.de_DE # :beer:
-      homebank
+      hunspell hunspellDicts.de_DE
       # Multimedia
       gimp spotify vlc
       # Puter touching
-      dbeaver-bin mariadb nil
-      kdePackages.kate
-      kdePackages.plasma-systemmonitor
-      just cargo
+      nil just cargo
       # IM
-      vesktop
-      tdesktop element-desktop signal-desktop
-      fractal
+      vesktop tdesktop element-desktop
+      signal-desktop fractal tuba
       # Gayming
       ppsspp-sdl-wayland
       retroarchBare
