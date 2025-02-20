@@ -60,7 +60,7 @@ in {
     # dragging windows to screen edges
     "org/gnome/mutter".edge-tiling = true;
     # currently doesn"t work on this device for some reason :/
-    "org/gnome/settings-daemon/plugins/color".night-light-enabled = false;
+    "org/gnome/settings-daemon/plugins/color".night-light-enabled = true;
     # power stuff
     "org/gnome/desktop/session".idle-delay = gvariant.mkUint32 0;
     "org/gnome/settings-daemon/plugins/power" = {
