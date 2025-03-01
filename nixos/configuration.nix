@@ -39,5 +39,8 @@
     pkgs.android-udev-rules
   ];
 
+  systemd.oomd.enable = false;
+  services.earlyoom.enable = true;
+
   system.stateVersion = "24.05";
 }
