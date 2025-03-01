@@ -75,6 +75,4 @@ in {
   };
   # monitor config
   xdg.configFile."monitors.xml".source = ./monitors.xml;
-
-  gtk.theme.name = "adw-gtk3-dark";
 }
