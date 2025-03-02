@@ -5,6 +5,7 @@
     { package = appindicator; }
     { package = night-theme-switcher; }
     { package = auto-power-profile; }
+    { package = power-profile-indicator-2; }
   ];
   dconf.settings = {
     "org/gnome/shell/extensions/nightthemeswitcher/time" = {
