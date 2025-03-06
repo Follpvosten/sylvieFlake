@@ -40,7 +40,11 @@
   ];
 
   systemd.oomd.enable = false;
-  services.earlyoom.enable = true;
+  services.earlyoom = {
+    enable = true;
+    freeMemThreshold = 2;
+    freeSwapThreshold = 100;
+  };
 
   system.stateVersion = "24.05";
 }
