@@ -24,7 +24,7 @@
     package = pkgs.ananicy-cpp;
     rulesProvider = pkgs.ananicy-cpp;
     extraTypes = [
-      { type = "compiler"; nice = 10; }
+      { type = "compiler"; nice = 1; }
       { type = "desktop"; nice = -10; }
       { type = "gui-app"; nice = -15; }
       { type = "call-app"; nice = -20; }
