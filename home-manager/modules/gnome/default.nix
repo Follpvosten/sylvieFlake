@@ -19,6 +19,7 @@ in {
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
       monospace-font-name = "FiraCode Nerd Font 10";
+      accent-color = "pink";
     };
     "org/gnome/desktop/input-sources".xkb-options = mkStrArray [];
     "org/gnome/shell".favorite-apps = mkStrArray [
@@ -61,6 +62,7 @@ in {
       # fractional scaling
       experimental-features = mkStrArray ["scale-monitor-framebuffer"];
       edge-tiling = true;
+      dynamic-workspaces = false;
     };
     # currently doesn"t work on this device for some reason :/
     "org/gnome/settings-daemon/plugins/color".night-light-enabled = false;
