@@ -29,6 +29,10 @@
       device = "zroot/nixos";
       fsType = "zfs";
     };
+    "/var/log" = {
+      device = "zroot/log";
+      fsType = "zfs";
+    };
     "/boot" = {
       device = "/dev/disk/by-uuid/4721-8607";
       fsType = "vfat";
