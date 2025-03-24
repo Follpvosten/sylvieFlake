@@ -11,8 +11,8 @@
     "org/gnome/shell/extensions/nightthemeswitcher/time" = {
       # it complains without this
       manual-schedule = true;
-      sunrise = 8.0;
-      sunset = 16.5;
+      sunrise = 6.0;
+      sunset = 18.5;
     };
     "org/gnome/shell/extensions/auto-power-profile" = {
       # profile on battery should always be power saver
