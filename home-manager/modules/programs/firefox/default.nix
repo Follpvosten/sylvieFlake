@@ -7,9 +7,9 @@
     path = "lu044f5h.default";
     search = {
       force = true;
-      default = "DuckDuckGo";
-      order = [ "DuckDuckGo" ];
-      engines."Google".metaData.hidden = true;
+      default = "ddg";
+      order = [ "ddg" ];
+      engines.google.metaData.hidden = true;
     };
     settings = {
       "browser.startup.homepage" = "https://start.duckduckgo.com";
