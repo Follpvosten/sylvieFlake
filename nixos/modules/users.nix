@@ -7,4 +7,10 @@
     extraGroups = [ "wheel" "networkmanager" "adbusers" ];
     shell = pkgs.fish;
   };
+  users.users.refraction = {
+    isNormalUser = true;
+    description = "refraction system";
+    extraGroups = [ "networkmanager" ];
+    packages = [ pkgs.firefox ];
+  };
 }
