@@ -21,7 +21,7 @@
       # Gayming
       ppsspp-sdl-wayland
       retroarchBare
-      lutris lime3ds
+      lutris azahar
       obs-studio obs-studio-plugins.obs-vkcapture
       obs-studio-plugins.obs-pipewire-audio-capture
       # Windows
