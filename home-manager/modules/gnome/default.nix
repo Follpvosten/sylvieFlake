@@ -57,8 +57,14 @@ in {
 
     # apparently this is needed for keyboard stuff
     "org/gnome/desktop/input-sources".show-all-sources = true;
-    # dragging windows to screen edges
-    "org/gnome/mutter".edge-tiling = true;
+    "org/gnome/mutter" = {
+      # dragging windows to screen edges
+      edge-tiling = true;
+      dynamic-workspaces = false;
+    };
+    "org/gnome/desktop/wm/preferences" = {
+      num-workspaces = 4;
+    };
     # currently doesn"t work on this device for some reason :/
     "org/gnome/settings-daemon/plugins/color".night-light-enabled = true;
     # power stuff
