@@ -27,7 +27,6 @@
     "/nix" = {
       device = "zroot/ROOT/nixos/nix";
       fsType = "zfs";
-      neededForBoot = true;
     };
     "/boot" = { 
       device = "/dev/disk/by-uuid/D542-D042";
