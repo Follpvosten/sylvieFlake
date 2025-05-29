@@ -13,7 +13,7 @@
         matthewpi.caddyfile-support mkhl.direnv
         # 🦀
         vadimcn.vscode-lldb rust-lang.rust-analyzer
-        bungcip.better-toml serayuzgur.crates
+        tamasfe.even-better-toml fill-labs.dependi
         # ❄️
         jnoortheen.nix-ide
         # terraform
