@@ -6,7 +6,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    
+
     initrd = {
       availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "rtsx_usb_sdmmc" ];
       kernelModules = [ ];
@@ -17,7 +17,6 @@
 
     kernelParams = [ "zfs.zfs_arc_max=524288000" ];
   };
-
 
   fileSystems = {
     "/" = { 
