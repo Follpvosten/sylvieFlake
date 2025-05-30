@@ -21,6 +21,7 @@ in {
       monospace-font-name = "FiraCode Nerd Font 10";
       icon-theme = "Adwaita";
       cursor-theme = "Adwaita";
+      accent-color = "pink";
     };
     "org/gnome/desktop/input-sources".xkb-options = mkStrArray [];
     "org/gnome/shell".favorite-apps = mkStrArray [
