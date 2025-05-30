@@ -28,6 +28,18 @@
       device = "zroot/ROOT/nixos/nix";
       fsType = "zfs";
     };
+    "/home" = {
+      device = "zroot/HOME";
+      fsType = "zfs";
+    };
+    "/home/sylvie" = {
+      device = "zroot/HOME/sylvie";
+      fsType = "zfs";
+    };
+    "/home/sylvie/iso" = {
+      device = "zroot/HOME/sylvie/iso";
+      fsType = "zfs";
+    };
     "/boot" = { 
       device = "/dev/disk/by-uuid/D542-D042";
       fsType = "vfat";
