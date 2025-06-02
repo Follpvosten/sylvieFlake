@@ -4,7 +4,9 @@
   users.users.sylvie = {
     isNormalUser = true;
     description = "Sylvie Hacker";
-    extraGroups = [ "wheel" "networkmanager" "adbusers" ];
+    extraGroups = [
+      "wheel" "networkmanager" "adbusers" "kvm" "libvirtd"
+    ];
     shell = pkgs.fish;
   };
   users.users.refraction = {

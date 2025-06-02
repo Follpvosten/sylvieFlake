@@ -39,6 +39,8 @@
     dockerCompat = true;
   };
 
+  virtualisation.libvirtd.enable = true;
+
   services.udev.packages = [
     pkgs.android-udev-rules
   ];
