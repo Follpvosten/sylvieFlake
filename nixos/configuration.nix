@@ -51,5 +51,11 @@
   #   tailor-gui.enable = true;
   # };
 
+  services.journald.extraConfig = ''
+    SystemMaxUse=256M
+    SystemMaxFileSize=16M
+    SystemMaxFiles=32
+  '';
+
   system.stateVersion = "22.11";
 }
