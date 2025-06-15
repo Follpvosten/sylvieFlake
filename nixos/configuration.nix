@@ -46,5 +46,11 @@
     freeSwapThreshold = 100;
   };
 
+  services.journald.extraConfig = ''
+    SystemMaxUse=256M
+    SystemMaxFileSize=16M
+    SystemMaxFiles=32
+  '';
+
   system.stateVersion = "24.05";
 }
