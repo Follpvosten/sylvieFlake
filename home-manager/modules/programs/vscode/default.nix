@@ -14,6 +14,7 @@
         # 🦀
         vadimcn.vscode-lldb rust-lang.rust-analyzer
         tamasfe.even-better-toml fill-labs.dependi
+        a5huynh.vscode-ron
         # ❄️
         jnoortheen.nix-ide
         # terraform
