@@ -1,9 +1,8 @@
 { pkgs, ... }:
 {
-  services.xserver = {
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
-  };
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+
   programs.dconf.profiles.gdm.databases = [{
     settings = {
       # this allows fractional scaling on the home screen.
