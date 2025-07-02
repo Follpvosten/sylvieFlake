@@ -27,7 +27,6 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.sharedModules = [ nur.modules.homeManager.default ];
             home-manager.users.sylvie = import home-manager/sylvie.nix;
           }
         ];
