@@ -15,7 +15,7 @@
 
   # the new terminal sucks
   environment.gnome.excludePackages = with pkgs; [
-    gnome-console gnome-tour gnome-logs yelp
+    gnome-console gnome-tour gnome-logs yelp geary
   ];
-  environment.systemPackages = [ pkgs.gnome-terminal ];
+  environment.systemPackages = [ pkgs.gnome-terminal pkgs.evolution ];
 }

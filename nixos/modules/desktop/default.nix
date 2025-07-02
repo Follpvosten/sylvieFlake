@@ -35,7 +35,7 @@
         "gnome-session-binary"
       ];
       guiApps = [
-        "nautilus" "totem" "geary" "gnome-calendar" "gnome-clocks" "diebahn"
+        "nautilus" "totem" "evolution" "gnome-calendar" "gnome-clocks" "diebahn"
         "snapshot" "firefox" "codium" "fractal" "signal-desktop" "telegram-desktop"
         "dev.geopjr.Tuba" ".gnome-terminal" "gnome-terminal-server"
       ];
