@@ -5,11 +5,6 @@
     enable = true;
     addKeysToAgent = "yes";
     matchBlocks = {
-      "kcloud" = {
-        user = "wolfie";
-        hostname = "cloud.karpador.xyz";
-        port = 65522;
-      };
       "kbackup" = {
         user = "jonas";
         hostname = "130.255.78.72";
