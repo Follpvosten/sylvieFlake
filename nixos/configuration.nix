@@ -52,5 +52,18 @@
     SystemMaxFiles=32
   '';
 
+  systemd.services.drop-caches = {
+    enable = true;
+    description = "drop filesystem caches";
+    script = ''
+      echo 3 > /proc/sys/vm/drop_caches
+    '';
+    serviceConfig = {
+      Type = "oneshot";
+      User = "root";
+    };
+    startAt = "*:0/10";
+  };
+
   system.stateVersion = "24.05";
 }
