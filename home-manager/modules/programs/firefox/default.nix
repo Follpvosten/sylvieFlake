@@ -35,6 +35,7 @@
       bitwarden
       consent-o-matic
       simple-tab-groups
+      auto-tab-discard
     ];
   };
 }
