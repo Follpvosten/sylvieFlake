@@ -21,6 +21,7 @@
       "video=DSI-1:panel_orientation=right_side_up"
     ];
     kernel.sysctl."vm.swappiness" = 1;
+    zfs.forceImportRoot = false;
   };
 
 
