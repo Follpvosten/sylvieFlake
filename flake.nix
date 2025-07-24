@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -15,7 +16,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nur, ... }: {
+  outputs = { nixpkgs, nixos-hardware, home-manager, nur, ... }: {
     nixosConfigurations = {
       tzuyu = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -23,6 +24,7 @@
           ./nixos/configuration.nix
 
           nur.modules.nixos.default
+          nixos-hardware.nixosModules.chuwi-minibook-x
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
