@@ -56,7 +56,7 @@
     enable = true;
     description = "drop filesystem caches";
     script = ''
-      echo 3 > /proc/sys/vm/drop_caches
+      echo 2 > /proc/sys/vm/drop_caches
     '';
     serviceConfig = {
       Type = "oneshot";
