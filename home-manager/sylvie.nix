@@ -7,8 +7,7 @@
     homeDirectory = "/home/sylvie";
     packages = with pkgs; [
       # General / Office
-      bitwarden libreoffice
-      diebahn
+      libreoffice diebahn
       # Multimedia
       gimp
       # Puter touching
@@ -18,6 +17,7 @@
       discord signal-desktop
       # social
       tuba
+      # gayme
       (retroarch.withCores (
         cores: with cores; [
           desmume
