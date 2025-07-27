@@ -18,10 +18,22 @@
       "zfs.zfs_arc_max=67108864"
       # attempt to *actually* limit arc size...
       "zfs.zfs_arc_sys_free=6442450944"
+      # recommended by powertop
+      "nmi_watchdog=0"
     ];
+    # recommended by powertop
+    kernel.sysctl."vm.dirty_writeback_centisecs" = 1500;
+    extraModprobeConfig = ''
+      options snd_hda_intel power_save=1
+    '';
     zfs.forceImportRoot = false;
   };
   services.zfs.trim.enable = true;
+  # recommended by powertop: runtime power management for all PCI devices
+  # https://wiki.archlinux.org/title/Power_management#PCI_Runtime_Power_Management
+  services.udev.extraRules = ''
+    SUBSYSTEM=="pci", ATTR{power/control}="auto"
+  '';
 
   fileSystems = {
     "/" = {
