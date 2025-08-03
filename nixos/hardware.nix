@@ -37,7 +37,7 @@
 
   fileSystems = {
     "/" = {
-      device = "zroot/nixos";
+      device = "zroot/root";
       fsType = "zfs";
     };
     "/var/log" = {
