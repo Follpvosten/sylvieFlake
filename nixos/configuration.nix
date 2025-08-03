@@ -21,6 +21,13 @@
   fonts.packages = [ pkgs.nerd-fonts.fira-code ];
 
   nixpkgs.config.allowUnfree = true;
+  # nixpkgs.overlays = [(final: prev: {
+  #   clapper = prev.clapper.overrideAttrs(old: {
+  #     buildInputs = old.buildInputs ++ [
+  #       pkgs.gst_all_1.gst-libav pkgs.gst_all_1.gst-vaapi
+  #     ];
+  #   });
+  # })];
 
   time.timeZone = "Europe/Vienna";
   i18n.defaultLocale = "de_AT.UTF-8";
