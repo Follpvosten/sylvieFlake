@@ -12,7 +12,7 @@
       nextcloud-client
       hunspell hunspellDicts.de_DE
       # Multimedia
-      gimp spotify vlc
+      gimp spotify
       # Puter touching
       nil just cargo
       # IM
