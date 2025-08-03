@@ -16,7 +16,10 @@
     extraModulePackages = [ ];
 
     kernelParams = [ "zfs.zfs_arc_max=524288000" ];
+    zfs.forceImportRoot = false;
   };
+  services.fstrim.enable = true;
+  services.zfs.trim.enable = true;
 
   fileSystems = {
     "/" = { 
