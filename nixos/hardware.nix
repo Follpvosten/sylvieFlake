@@ -36,26 +36,6 @@
   '';
 
   fileSystems = {
-    "/" = {
-      device = "zroot/root";
-      fsType = "zfs";
-    };
-    "/var/log" = {
-      device = "zroot/log";
-      fsType = "zfs";
-    };
-    "/boot" = {
-      device = "/dev/disk/by-uuid/4721-8607";
-      fsType = "vfat";
-    };
-    "/nix" = {
-      device = "zroot/nix";
-      fsType = "zfs";
-    };
-    "/home" = {
-      device = "zroot/home";
-      fsType = "zfs";
-    };
     "/home/sylvie" = {
       device = "zroot/home/sylvie";
       fsType = "zfs";

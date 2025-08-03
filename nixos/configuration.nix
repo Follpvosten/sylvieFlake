@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules
+    ./disko.nix
     ./hardware.nix
   ];
 

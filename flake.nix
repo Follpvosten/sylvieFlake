@@ -9,20 +9,24 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    disko = {
+      url = "github:nix-community/disko/latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, nixos-hardware, home-manager, nur, ... }: {
+  outputs = { nixpkgs, nixos-hardware, home-manager, nur, disko, ... }: {
     nixosConfigurations = {
       tzuyu = nixpkgs.lib.nixosSystem {
         modules = [
           ./nixos/configuration.nix
 
           nur.modules.nixos.default
+          disko.nixosModules.disko
           nixos-hardware.nixosModules.chuwi-minibook-x
           home-manager.nixosModules.home-manager
           {
