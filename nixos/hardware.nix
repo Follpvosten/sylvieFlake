@@ -22,18 +22,6 @@
   services.zfs.trim.enable = true;
 
   fileSystems = {
-    "/" = { 
-      device = "zroot/root";
-      fsType = "zfs";
-    };
-    "/nix" = {
-      device = "zroot/nix";
-      fsType = "zfs";
-    };
-    "/home" = {
-      device = "zroot/home";
-      fsType = "zfs";
-    };
     "/home/sylvie" = {
       device = "zroot/home/sylvie";
       fsType = "zfs";
@@ -41,10 +29,6 @@
     "/home/sylvie/iso" = {
       device = "zroot/home/sylvie/iso";
       fsType = "zfs";
-    };
-    "/boot" = { 
-      device = "/dev/disk/by-uuid/D542-D042";
-      fsType = "vfat";
     };
   };
 

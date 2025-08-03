@@ -2,8 +2,9 @@
 { pkgs, ... }:
 {
   imports = [ 
-    ./modules 
-    ./hardware.nix  
+    ./modules
+    ./disko.nix
+    ./hardware.nix
   ];
 
   nix.settings = {
