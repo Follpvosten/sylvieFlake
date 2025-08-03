@@ -19,7 +19,6 @@
   outputs = { nixpkgs, nixos-hardware, home-manager, nur, ... }: {
     nixosConfigurations = {
       tzuyu = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
         modules = [
           ./nixos/configuration.nix
 
