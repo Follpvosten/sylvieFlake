@@ -23,23 +23,23 @@
 
   fileSystems = {
     "/" = { 
-      device = "zroot/ROOT/nixos";
+      device = "zroot/root";
       fsType = "zfs";
     };
     "/nix" = {
-      device = "zroot/ROOT/nixos/nix";
+      device = "zroot/nix";
       fsType = "zfs";
     };
     "/home" = {
-      device = "zroot/HOME";
+      device = "zroot/home";
       fsType = "zfs";
     };
     "/home/sylvie" = {
-      device = "zroot/HOME/sylvie";
+      device = "zroot/home/sylvie";
       fsType = "zfs";
     };
     "/home/sylvie/iso" = {
-      device = "zroot/HOME/sylvie/iso";
+      device = "zroot/home/sylvie/iso";
       fsType = "zfs";
     };
     "/boot" = { 
