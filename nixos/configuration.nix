@@ -38,7 +38,6 @@
     zip rar p7zip
     vim wget
     git htop
-    adw-gtk3
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
