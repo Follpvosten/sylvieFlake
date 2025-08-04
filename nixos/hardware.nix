@@ -21,8 +21,12 @@
       # recommended by powertop
       "nmi_watchdog=0"
     ];
-    # recommended by powertop
-    kernel.sysctl."vm.dirty_writeback_centisecs" = 1500;
+    kernel.sysctl = {
+      # recommended by powertop
+      "vm.dirty_writeback_centisecs" = 1500;
+      # recommended by me
+      "vm.swappiness" = 5;
+    };
     extraModprobeConfig = ''
       options snd_hda_intel power_save=1
     '';
