@@ -34,17 +34,12 @@
   i18n.defaultLocale = "de_AT.UTF-8";
 
   environment.systemPackages = with pkgs; [
-    ripgrep
-    zip rar p7zip
-    vim wget
-    git htop
+    ripgrep zip rar p7zip vim wget git htop
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
 
-  services.udev.packages = [
-    pkgs.android-udev-rules
-  ];
+  services.udev.packages = [ pkgs.android-udev-rules ];
 
   systemd.oomd.enable = false;
   services.earlyoom = {
