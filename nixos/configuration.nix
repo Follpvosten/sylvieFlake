@@ -41,13 +41,6 @@
 
   services.udev.packages = [ pkgs.android-udev-rules ];
 
-  systemd.oomd.enable = false;
-  services.earlyoom = {
-    enable = true;
-    freeMemThreshold = 2;
-    freeSwapThreshold = 100;
-  };
-
   services.journald.extraConfig = ''
     SystemMaxUse=256M
     SystemMaxFileSize=16M
