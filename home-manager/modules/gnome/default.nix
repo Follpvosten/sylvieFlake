@@ -24,7 +24,7 @@ in {
     "org/gnome/desktop/input-sources".xkb-options = mkStrArray [];
     "org/gnome/shell".favorite-apps = mkStrArray [
       "firefox.desktop"
-      "org.gnome.Geary.desktop"
+      "org.gnome.Evolution.desktop"
       "org.gnome.Calendar.desktop"
       "org.gnome.Nautilus.desktop"
       "org.gnome.Terminal.desktop"
