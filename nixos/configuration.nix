@@ -61,7 +61,7 @@
   '';
 
   systemd.services.drop-caches = {
-    enable = true;
+    enable = false;
     description = "drop filesystem caches";
     script = ''
       echo 2 > /proc/sys/vm/drop_caches

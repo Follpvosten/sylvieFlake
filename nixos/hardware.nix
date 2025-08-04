@@ -31,9 +31,9 @@
   services.zfs.trim.enable = true;
   # recommended by powertop: runtime power management for all PCI devices
   # https://wiki.archlinux.org/title/Power_management#PCI_Runtime_Power_Management
-  services.udev.extraRules = ''
-    SUBSYSTEM=="pci", ATTR{power/control}="auto"
-  '';
+  # services.udev.extraRules = ''
+  #   SUBSYSTEM=="pci", ATTR{power/control}="auto"
+  # '';
 
   fileSystems = {
     "/home/sylvie" = {
