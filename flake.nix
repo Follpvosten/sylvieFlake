@@ -20,22 +20,20 @@
   };
 
   outputs = { nixpkgs, nixos-hardware, home-manager, nur, disko, ... }: {
-    nixosConfigurations = {
-      tzuyu = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./nixos/configuration.nix
+    nixosConfigurations.tzuyu = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./nixos/configuration.nix
 
-          nur.modules.nixos.default
-          disko.nixosModules.disko
-          nixos-hardware.nixosModules.chuwi-minibook-x
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.sylvie = import home-manager/sylvie.nix;
-          }
-        ];
-      };
+        nur.modules.nixos.default
+        disko.nixosModules.disko
+        nixos-hardware.nixosModules.chuwi-minibook-x
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.sylvie = import home-manager/sylvie.nix;
+        }
+      ];
     };
   };
 }
