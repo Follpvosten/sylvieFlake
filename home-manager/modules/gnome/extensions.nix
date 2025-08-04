@@ -11,7 +11,7 @@
     "org/gnome/shell/extensions/nightthemeswitcher/time" = {
       # it complains without this
       manual-schedule = true;
-      sunrise = 6.0;
+      sunrise = 7.0;
       sunset = 18.5;
     };
     "org/gnome/shell/extensions/auto-power-profile" = {
