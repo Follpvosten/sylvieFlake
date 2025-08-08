@@ -48,7 +48,7 @@
   '';
 
   systemd.services.drop-caches = {
-    enable = false;
+    enable = true;
     description = "drop filesystem caches";
     script = ''
       echo 2 > /proc/sys/vm/drop_caches
@@ -57,7 +57,7 @@
       Type = "oneshot";
       User = "root";
     };
-    startAt = "*:0/10";
+    startAt = "*:0/30";
   };
 
   system.stateVersion = "24.05";

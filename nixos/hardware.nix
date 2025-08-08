@@ -25,7 +25,7 @@
       # recommended by powertop
       "vm.dirty_writeback_centisecs" = 1500;
       # recommended by me
-      "vm.swappiness" = 5;
+      "vm.swappiness" = 1;
     };
     extraModprobeConfig = ''
       options snd_hda_intel power_save=1
