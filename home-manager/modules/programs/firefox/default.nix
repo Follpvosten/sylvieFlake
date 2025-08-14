@@ -29,6 +29,16 @@
       "datareporting.healthreport.uploadEnabled" = false;
       "browser.translations.automaticallyPopup" = false;
       "browser.uiCustomization.state" = builtins.toJSON (import ./uiconfig.nix);
+      # AI/ML crap
+      "browser.ml.chat.enabled" = false;
+      "browser.ml.chat.shortcuts" = false;
+      "browser.ml.chat.shortcuts.custom" = false;
+      "browser.ml.chat.sidebar" = false;
+      "browser.ml.enable" = false;
+      "extensions.ml.enabled" = false;
+      "browser.tabs.groups.smart.enabled" = false;
+      "browser.tabs.groups.smart.optin" = false;
+      "browser.tabs.groups.smart.userEnabled" = false;
     };
     extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
       ublock-origin
