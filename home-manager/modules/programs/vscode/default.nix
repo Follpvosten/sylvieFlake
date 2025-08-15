@@ -11,8 +11,7 @@
 
       extensions = with pkgs.vscode-extensions; [
         # General
-        usernamehw.errorlens ms-azuretools.vscode-docker
-        matthewpi.caddyfile-support mkhl.direnv
+        usernamehw.errorlens mkhl.direnv
         # 🦀
         vadimcn.vscode-lldb rust-lang.rust-analyzer
         tamasfe.even-better-toml fill-labs.dependi
