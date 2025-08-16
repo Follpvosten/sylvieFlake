@@ -12,6 +12,7 @@
         "ublock0_raymondhill_net-browser-action"
         # why is bitwarden called that???
         "_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action"
+        "_testpilot-containers-browser-action"
         "simple-tab-groups_drive4ik-browser-action"
         "unified-extensions-button"
     ];
