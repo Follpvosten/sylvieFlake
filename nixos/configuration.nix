@@ -35,11 +35,17 @@
 
   environment.systemPackages = with pkgs; [
     ripgrep zip rar p7zip vim wget git htop
+    libimobiledevice
   ];
 
   environment.pathsToLink = [ "/share/nix-direnv" ];
 
   services.udev.packages = [ pkgs.android-udev-rules ];
+
+  services.usbmuxd = {
+    enable = true;
+    package = pkgs.usbmuxd2;
+  };
 
   services.journald.extraConfig = ''
     SystemMaxUse=256M
