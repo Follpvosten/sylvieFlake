@@ -23,7 +23,7 @@ in {
     };
     "org/gnome/desktop/input-sources".xkb-options = mkStrArray [];
     "org/gnome/shell".favorite-apps = mkStrArray [
-      "firefox.desktop"
+      "librewolf.desktop"
       "org.gnome.Evolution.desktop"
       "org.gnome.Calendar.desktop"
       "org.gnome.Nautilus.desktop"
